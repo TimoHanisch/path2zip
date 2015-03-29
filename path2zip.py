@@ -1,4 +1,7 @@
-__author__ = 'Timo Hanisch'
+__author__ = "Timo Hanisch"
+__version__ = "1.0.0"
+__maintainer__ = "Timo Hanisch"
+__email__ = "timohanisch@gmail.com"
 
 import sys
 import os
