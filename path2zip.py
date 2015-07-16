@@ -25,11 +25,15 @@ def main(path, zip_file_name, regex='.*'):
 
 
 if __name__ == '__main__':
-    if len(sys.argv) < 3:
-        print 'Usage of csv2zip: path2zip "<path>" "<name>" ["<regex>"]'
-        print '\t<path>: The path of the root folder to zip'
-        print '\t<name>: The name of the zip file to create'
-        print '\t<regex> (optional): A regex which is matched against all files found in the path\n' \
-              '\tand its sub folders. By default all files (.*) are written to the zip file'
-        sys.exit(-1)
-    sys.exit(main(sys.argv[1], sys.argv[2], sys.argv[3]))
+	if len(sys.argv) < 3:
+		print sys.argv
+		print 'Usage of csv2zip: path2zip "<path>" "<name>" ["<regex>"]'
+		print '\t<path>: The path of the root folder to zip'
+		print '\t<name>: The name of the zip file to create'
+		print '\t<regex> (optional): A regex which is matched against all files found in the path\n' \
+		  '\tand its sub folders. By default all files (.*) are written to the zip file'
+		sys.exit(-1)
+	elif len(sys.argv) < 4:
+		sys.exit(main(sys.argv[1], sys.argv[2]))
+	else:
+		sys.exit(main(sys.argv[1], sys.argv[2], sys.argv[3]))
