@@ -2,6 +2,7 @@ __author__ = "Timo Hanisch"
 __version__ = "1.0.0"
 __maintainer__ = "Timo Hanisch"
 __email__ = "timohanisch@gmail.com"
+__version__ = "1.0.0"
 
 import sys
 import os
